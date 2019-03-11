@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Reaction Tester</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <button id="music-toggle">Toggle Music</button>
+        <input type="range" min="1" max="100" step="5" value="20" class="slider" id="volume-slider" oninput="setVolume(this.value)" onchange="setVolume(this.value)">
+        <p><strong>Your reaction time in seconds:<span id="timer"></span></strong></p>
+		<div id="playground">
+			<div id="info-container">
+				<p>
+            		Click on the objects as quickly as you can to test your reaction time!<br>
+            		The object will appear in a random color either as a square or a circle.<br>
+            		Best of luck!
+        		</p>
+				<button id="info-container-button">PLAY</button>
+			</div>
+			<div id="shape"></div>
+        </div>
+        <div id="dataContainer">
+            
+        </div>
+        <script type="text/javascript" src="logic.js"></script>
+    </body>
+</html>
